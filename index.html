@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SitCo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+body {
+    margin: 0;
+    background-color: #141414;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 20px 40px;
+}
+
+header img {
+    height: 45px;
+}
+
+.section {
+    padding: 10px 40px 30px;
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 160px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.card:hover {
+    transform: scale(1.25);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    z-index: 10;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="SitCo Logo">
+</header>
+
+<div class="section">
+<h2>Classic Sitcoms</h2>
+<div class="row">
+
+<a class="card" href="https://www.youtube.com/watch?v=TYR6ERu5A8A" target="_blank">
+<img src="covers/friends.jpg">
+</a>
+
+<a class="card" href="https://www.youtube.com/watch?v=K40YyN6RrTg" target="_blank">
+<img src="covers/himym.jpg">
+</a>
+
+<a class="card" href="https://www.youtube.com/watch?v=Yn0l4p6mFTo" target="_blank">
+<img src="covers/seinfeld.jpg">
+</a>
+
+<a class="card" href="https://www.youtube.com/watch?v=V0uYqf6Xq8c" target="_blank">
+<img src="covers/office.jpg">
+</a>
+
+<a class="card" href="https://www.youtube.com/watch?v=nr3pX9z8WZk" target="_blank">
+<img src="covers/b99.jpg">
+</a>
+
+</div>
+</div>
+
+</body>
+</html>
